@@ -167,7 +167,7 @@
             <form>
               <div class="mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" />
+                <input type="text" class="form-control" id="name" name="nama" aria-describedby="name" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
@@ -220,7 +220,7 @@
              // tampilkan alert
              myAlert.classList.toggle('d-none');
             //  reset formnya
-            form.true();
+            form.value('nama');
             console.log('Success!', response);
            
           })
